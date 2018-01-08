@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import TitleMenu from './components/TitleMenu';
 import TitleBar from './components/TitleBar';
 // import Images from './components/Images';
+import Photos from './components/Photos';
 
 class App extends Component {
   render() {
     return (
       <div>
         <MuiThemeProvider>
-          <TitleMenu>
             <TitleBar/>
-          </TitleMenu>
+            <Photos/>
           {/* <Images/> */}
         </MuiThemeProvider>
       </div>
