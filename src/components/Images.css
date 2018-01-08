@@ -10,3 +10,7 @@
         height: 150px;
         width: 300px;
     }
+    img:hover {
+        background: black;
+        opacity: 0.5;
+    }
