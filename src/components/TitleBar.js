@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
 import FontIcon from 'material-ui/FontIcon';
+import './ToolbarStyle.css'
 
 
 class TitleBar extends Component {
@@ -19,7 +20,9 @@ class TitleBar extends Component {
     return (
       <Toolbar>
         <ToolbarGroup firstChild={true}>
-            <ToolbarTitle text="Noah's Photography" />
+            <ToolbarTitle 
+            className="TitleName"
+            text="Noah's Photography" />
         </ToolbarGroup>
         <ToolbarGroup>
             <FontIcon className="material-icons">photo_camera</FontIcon>

@@ -1,17 +1,35 @@
 
 .wrapper {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        object-fit: contain;
+        display: flex;
+        flex-flow: row wrap;
         margin: 5px 5px 0px 5px;
         background: black;
     }
 
     img {
+        display: flex;
         height: 150px;
         width: 300px;
+        margin: 5px 5px 5px 5px;
+        object-fit: contain;
+        
+        
     }
     img:hover {
-        background: black;
         opacity: 0.5;
+        cursor: zoom-in;
+    }
+    img:active {
+        object-fit: contain;
+        overflow: hidden;
+        opacity: 1;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(2);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(2);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(2);
+        transition: all 200ms ease-in;
+        transform: scale(2);
     }
