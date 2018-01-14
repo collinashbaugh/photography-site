@@ -3,6 +3,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
 import FontIcon from 'material-ui/FontIcon';
 import './ToolbarStyle.css'
+import { Link } from 'react-router-dom'
 
 
 class TitleBar extends Component {
@@ -18,7 +19,7 @@ class TitleBar extends Component {
 
   render() {
     return (
-      <Toolbar>
+      <Toolbar className="ToolBar">
         <ToolbarGroup firstChild={true}>
             <ToolbarTitle 
             className="TitleName"
@@ -26,10 +27,10 @@ class TitleBar extends Component {
         </ToolbarGroup>
         <ToolbarGroup>
             <FontIcon className="material-icons">photo_camera</FontIcon>
-            <ToolbarSeparator/>
+            <ToolbarSeparator />
             <RaisedButton label="About" />
             <ToolbarSeparator />
-            <RaisedButton label="Contact" primary={true} />
+            <Link to="/ContactPage"><RaisedButton label="Contact" primary={true} /></Link>
         </ToolbarGroup>
       </Toolbar>
     );

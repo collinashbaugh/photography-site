@@ -1,28 +1,31 @@
-
-.wrapper {
-        object-fit: contain;
+    .wrapper {
         display: flex;
-        flex-flow: row wrap;
-        margin: 5px 5px 0px 5px;
-        background: black;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5px;
+        padding: 5px;
+        justify-content: space-around;
     }
-
     img {
-        display: flex;
         height: 150px;
-        width: 300px;
-        margin: 5px 5px 5px 5px;
-        object-fit: contain;
-        
-        
+        display:flex;
+        align-items: center;
+        margin: 5px;
     }
     img:hover {
-        opacity: 0.5;
+        opacity: .5;
         cursor: zoom-in;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
     }
     img:active {
-        object-fit: contain;
-        overflow: hidden;
+        display: flex;
+        justify-content: center;
         opacity: 1;
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(2);
@@ -32,4 +35,7 @@
         -moz-transform: scale(2);
         transition: all 200ms ease-in;
         transform: scale(2);
+    }
+    body {
+        background: black;
     }
