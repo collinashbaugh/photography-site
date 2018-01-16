@@ -21,16 +21,16 @@ class TitleBar extends Component {
     return (
       <Toolbar className="ToolBar">
         <ToolbarGroup firstChild={true}>
-            <ToolbarTitle 
+            <Link to="/"><ToolbarTitle 
             className="TitleName"
-            text="Noah's Photography" />
+            text="Noah's Photography" /></Link>
         </ToolbarGroup>
         <ToolbarGroup>
             <FontIcon className="material-icons">photo_camera</FontIcon>
             <ToolbarSeparator />
             <RaisedButton label="About" />
             <ToolbarSeparator />
-            <Link to="/ContactPage"><RaisedButton label="Contact" primary={true} /></Link>
+            <Link to="/Contact"><RaisedButton label="Contact" primary={true} /></Link>
         </ToolbarGroup>
       </Toolbar>
     );

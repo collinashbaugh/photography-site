@@ -3,7 +3,7 @@ import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TitleBar from './components/TitleBar';
 import Photos from './components/Photos';
-import ContactPage from './components/ContactPage'
+import Contact from './components/ContactPage'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 class App extends Component {
@@ -11,10 +11,10 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div>
-        <Route exact path="/ContactPage" componenet={ContactPage}/>
         <MuiThemeProvider>
             <TitleBar/>
-            <Photos/>
+            <Route exact path="/" component={Photos}/>
+            <Route exact path="/Contact" component={Contact}/>
         </MuiThemeProvider>
       </div>
       </BrowserRouter>
